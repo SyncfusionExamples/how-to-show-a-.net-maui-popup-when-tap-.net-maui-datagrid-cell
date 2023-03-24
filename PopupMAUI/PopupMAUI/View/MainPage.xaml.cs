@@ -6,10 +6,9 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
-    private void DataGrid_CellTapped(object sender, Syncfusion.Maui.DataGrid.DataGridCellTappedEventArgs e)
-    {
-        sfPopup.Show();
-    }
+	private void DataGrid_CellTapped(object sender, Syncfusion.Maui.DataGrid.DataGridCellTappedEventArgs e)
+	{
+		sfPopup.Show();
+	}
 }
 
