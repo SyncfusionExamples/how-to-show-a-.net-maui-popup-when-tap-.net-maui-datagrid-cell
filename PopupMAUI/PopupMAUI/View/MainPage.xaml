@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfDatagrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"             
+             xmlns:local="clr-namespace:PopupMAUI"
+             x:Class="PopupMAUI.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <sfDatagrid:SfDataGrid x:Name="dataGrid"
+                                   ItemsSource="{Binding OrdersInfo}"
+                                   CellTapped="DataGrid_CellTapped"
+                                   ColumnWidthMode="Fill">
+            </sfDatagrid:SfDataGrid>
+
+            <sfPopup:SfPopup x:Name="sfPopup" 
+                             HeaderTitle="Popup" 
+                             AutoSizeMode="Height"
+                             ShowCloseButton="True">
+                <sfPopup:SfPopup.ContentTemplate>
+                    <DataTemplate>
+                        <Label Text="A pop-up is a graphical user interface display area that suddenly appears in the foreground of the visual interface. Pop-up can be initiated by single or double tap or can simply be timed to occur. A pop-up window should be smaller than the background window or interface; otherwise, its a replacement interface."                               
+                               TextColor="Black" 
+                               FontSize="14" 
+                               FontFamily="Roboto" 
+                               Padding="0,0,0,24" />
+                    </DataTemplate>
+                </sfPopup:SfPopup.ContentTemplate>
+            </sfPopup:SfPopup>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
