@@ -49,12 +49,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Syncfusion.Maui.Core" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.Data" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.DataGrid" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.GridCommon" Version="*" />
-		<PackageReference Include="Syncfusion.Maui.Popup" Version="*" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="*" />
+		<PackageReference Include="Syncfusion.Maui.Popup" Version="*" />	
 	</ItemGroup>
 
 </Project>
