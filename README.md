@@ -47,6 +47,7 @@ Handle the DataGrid cell tap and open the popup in code-behind:
 		sfPopup.Show();
 	}
 ```
+<img width="504" height="482" alt="SfPopup" src="https://github.com/user-attachments/assets/0783bba1-1d70-4ddd-a8b0-f7bd399bfb9b" />
 
 ## How it works
 - SfDataGrid raises the CellTapped event when the user taps any cell.
