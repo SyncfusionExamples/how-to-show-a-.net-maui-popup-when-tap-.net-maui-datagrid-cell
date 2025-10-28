@@ -1,4 +1,4 @@
-# How to show a .NET MAUI Popup when tapping a .NET MAUI DataGrid cell
+# How to show a .NET MAUI Popup when tapping a .NET MAUI DataGrid cell?
 In this article, we will show you how to display a popup using Syncfusion .NET MAUI SfPopup when a user taps a cell in the Syncfusion .NET MAUI DataGrid (SfDataGrid). This pattern is useful for showing additional details, contextual actions, confirmations, or lightweight forms without navigating away from the current page. The implementation is straightforward: wire up the DataGrid CellTapped event and call Show() on the SfPopup instance.
 
 The sample uses a simple ViewModel as BindingContext for the page and demonstrates the following:
